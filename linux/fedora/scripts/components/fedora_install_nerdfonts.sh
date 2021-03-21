@@ -4,7 +4,7 @@ GREEN=$(tput setaf 2)
 BOLD=$(tput bold)
 RESET=$(tput sgr0)
 
-fonts=("AnonymousPro" "FantasqueSansMono" "Inconsolata" "Hack" "Hasklig" "FiraCode" "IBMPlexMono" "Iosevka" "CascadiaCode" "SourceCodePro")
+fonts=("AnonymousPro" "Cousine" "FantasqueSansMono" "Inconsolata" "Hack" "Hasklig" "FiraCode" "IBMPlexMono" "Iosevka" "CascadiaCode" "SourceCodePro")
 
 cat <<EOL
 ${BOLD}Nerd Fonts patched fonts to install${RESET}
