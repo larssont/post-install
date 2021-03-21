@@ -10,10 +10,6 @@ GREEN=$(tput setaf 2)
 BOLD=$(tput bold)
 RESET=$(tput sgr0)
 
-if [ "$(id -u)" != 0 ]; then
-    echo "You're not root! Run script with sudo" && exit 1
-fi
-
 if [[ $(rpm -E %fedora) -lt 33 ]]; then
     echo >&2 "You must install at least ${GREEN}Fedora 33${RESET} to use this script" && exit 1
 fi

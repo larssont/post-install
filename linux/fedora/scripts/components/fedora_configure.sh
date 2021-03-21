@@ -4,10 +4,6 @@ GREEN=$(tput setaf 2)
 BOLD=$(tput bold)
 RESET=$(tput sgr0)
 
-if [ "$(id -u)" != 0 ]; then
-    echo "You're not root! Run script with sudo" && exit 1
-fi
-
 read -rp "What is this computer's name? [$HOSTNAME] " hostname
 if [[ -n "$hostname" ]]; then
     hostnamectl set-hostname "$hostname"
